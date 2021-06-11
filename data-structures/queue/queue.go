@@ -12,8 +12,8 @@ type Node struct {
 type Queue []Node
 
 // enqueue
-func (q *Queue) push(n *Node) {
-	*q = append(*q, *n)
+func (q *Queue) push(n Node) {
+	*q = append(*q, n)
 }
 
 // dequeue,
@@ -62,9 +62,9 @@ func (q Queue) print(prefix ...interface{}) {
 func main() {
 	var line Queue
 
-	line.push(&Node{"andy", "burger"})
-	line.push(&Node{"brody", "fries"})
-	line.push(&Node{"cindy", "ice cream"})
+	line.push(Node{"andy", "burger"})
+	line.push(Node{"brody", "fries"})
+	line.push(Node{"cindy", "ice cream"})
 	line.print("after insertions: ")
 
 	popped := line.pop()
