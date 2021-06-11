@@ -51,30 +51,23 @@ func (q Queue) lookup(name string) *Node {
 	return nil
 }
 
-// debug
-func (q Queue) print(prefix ...interface{}) {
-	fmt.Print(prefix...)
-	fmt.Println(q)
-	fmt.Println("------")
-}
-
 func main() {
 	var line Queue
 
 	line.push(Node{"andy", "burger"})
 	line.push(Node{"brody", "fries"})
 	line.push(Node{"cindy", "ice cream"})
-	line.print("after insertions: ")
+	fmt.Printf("after insertions: %v\n\n", line)
 
 	popped := line.pop()
 	fmt.Println("popped", popped)
-	line.print("after deletion: ")
+	fmt.Printf("after deletion: %v\n\n", line)
 
 	peeked := line.peek()
 	fmt.Println("peeked at", peeked)
-	line.print("after peek: ")
+	fmt.Printf("after peek: %v\n\n", line)
 
 	looked := line.lookup("cindy")
 	fmt.Println("looked up", looked)
-	line.print("after lookup: ")
+	fmt.Printf("after lookup: %v\n\n", line)
 }
