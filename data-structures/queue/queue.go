@@ -25,7 +25,7 @@ func (q *Queue) push(n Node) {
 func (q *Queue) pop() (Node, error) {
 	if len(*q) > 0 {
 		tmp := (*q)[0]
-		*q = (*q)[1:]
+		*q = (*q)[1:] // this actually causes memory leak, q[0] is not freed
 		return tmp, nil
 	}
 
