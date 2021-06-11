@@ -3,12 +3,11 @@ package main
 import "fmt"
 
 type Node struct {
-	// the payload of the queue
+	// example node representing people ordering foods in a line
 	name string
 	order string
 }
 
-// this queue will only hold items of type Node
 type Queue []Node
 
 // enqueue
