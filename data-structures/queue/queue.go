@@ -1,9 +1,6 @@
 package main
 
-import (
-	"errors"
-	"fmt"
-)
+import "fmt"
 
 type Node struct {
 	// the payload of the queue
@@ -15,21 +12,44 @@ type Node struct {
 type Queue []Node
 
 // enqueue
-func (q *Queue) push(n Node) {
-	*q = append(*q, n)
+func (q *Queue) push(n *Node) {
+	*q = append(*q, *n)
 }
 
 // dequeue,
-// returns the dequeued node and error,
-// error triggered when popping an empty queue
-func (q *Queue) pop() (Node, error) {
+// returns pointer to dequeued node or
+// nil if queue is empty
+func (q *Queue) pop() *Node {
 	if len(*q) > 0 {
 		tmp := (*q)[0]
-		*q = (*q)[1:] // this actually causes memory leak, q[0] is not freed
-		return tmp, nil
+		*q = (*q)[1:]
+		return &tmp
 	}
 
-	return Node{}, errors.New("queue pop error: empty queue")
+	return nil
+}
+
+// returns pointer to first node or
+// nil if queue is empty
+func (q Queue) peek() *Node {
+	if len(q) > 0 {
+		return q.pop()
+	}
+
+	return nil
+}
+
+// returns pointer to node with node's name name or
+// nil if not found
+func (q Queue) lookup(name string) *Node {
+	for q.peek() != nil {
+		if q.peek().name == name {
+			return q.pop()
+		}
+		q.pop()
+	}
+
+	return nil
 }
 
 // debug
@@ -41,25 +61,21 @@ func (q Queue) print(prefix ...interface{}) {
 
 func main() {
 	var line Queue
-	var popped Node
-	var err error
 
-	line.push(Node{"andy", "burger"})
-	line.print("after insert: ")
-	
-	line.push(Node{"brody", "fries"})
-	line.print("after insert: ")
-	
-	line.push(Node{"cindy", "ice cream"})
-	line.print("after insert: ")
+	line.push(&Node{"andy", "burger"})
+	line.push(&Node{"brody", "fries"})
+	line.push(&Node{"cindy", "ice cream"})
+	line.print("after insertions: ")
 
-	for i := 0; i < 4; i++ {
-		popped, err = line.pop()
-		if err != nil {
-			fmt.Println(err)
-		}
+	popped := line.pop()
+	fmt.Println("popped", popped)
+	line.print("after deletion: ")
 
-		fmt.Println("popped", popped)
-		line.print("after pop: ")
-	}
+	peeked := line.peek()
+	fmt.Println("peeked at", peeked)
+	line.print("after peek: ")
+
+	looked := line.lookup("cindy")
+	fmt.Println("looked up", looked)
+	line.print("after lookup: ")
 }
