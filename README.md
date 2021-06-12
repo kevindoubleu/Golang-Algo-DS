@@ -4,7 +4,13 @@ Here's my notebook of algo & DS in golang to help me land my first entry level s
 
 ## Contents
 
+Data Structures
 - queue
+- stack
+
+Challenges
+- DS
+    - queue from stacks
 
 ## Contributing
 
