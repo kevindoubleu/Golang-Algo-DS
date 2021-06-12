@@ -1,0 +1,3 @@
+iterating over custom structs
+https://stackoverflow.com/questions/35810674/in-go-is-it-possible-to-iterate-over-a-custom-type/35810932
+https://stackoverflow.com/questions/14000534/what-is-most-idiomatic-way-to-create-an-iterator-in-go

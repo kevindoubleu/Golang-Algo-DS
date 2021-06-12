@@ -7,6 +7,8 @@ Here's my notebook of algo & DS in golang to help me land my first entry level s
 Data Structures
 - queue
 - stack
+- linked list
+    - single
 
 Challenges
 - DS
