@@ -71,6 +71,12 @@ func (ll *LinkedList) popLast() *Node {
 	return tmp
 }
 
+func (ll *LinkedList) clear() {
+	// in golang, circular references can be garbage collected
+	ll.head = nil
+	ll.tail = nil
+}
+
 func main() {
 	var list LinkedList
 	list.print()
@@ -125,5 +131,10 @@ func main() {
 		fmt.Println("modifying node", n)
 		n.data += 10
 	}
+	list.print()
+	fmt.Println("")
+
+	list.clear()
+	fmt.Println("cleared list")
 	list.print()
 }

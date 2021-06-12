@@ -1,0 +1,2 @@
+clearing a linked list
+https://stackoverflow.com/questions/18397771/garbage-collection-linked-list

@@ -60,6 +60,11 @@ func (ll *LinkedList) popLast() *Node {
 	return current.next
 }
 
+func (ll *LinkedList) clear() {
+	// entire list will be garbage collected
+	ll.head = nil
+}
+
 func main() {
 	var list LinkedList
 	list.print()
@@ -114,5 +119,10 @@ func main() {
 		fmt.Println("modifying node", n)
 		n.data += 10
 	}
+	list.print()
+	fmt.Println("")
+
+	list.clear()
+	fmt.Println("cleared list")
 	list.print()
 }
