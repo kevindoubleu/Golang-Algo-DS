@@ -13,6 +13,7 @@ Data Structures
 Challenges
 - DS
     - queue from stacks
+    - linked list shuffle
 
 ## Contributing
 
