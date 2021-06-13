@@ -36,10 +36,12 @@ Table of time complexities for common operations in each DS implementations in t
 | --------- | ---------- |
 | append    | **O(n)**   |
 | prepend   | O(1)       |
+| getFirst  | O(1)       |
+| getLast   | **O(n)**   |
 | popFirst  | O(1)       |
 | popLast   | **O(n)**   |
 
-append, popLast: [improved in doubly](#2.2-linked-list-doubly)
+append, getLast, popLast: [improved in doubly](#2.2-linked-list-doubly)
 
 ### 2.2 Linked List (Doubly)
 
@@ -47,5 +49,7 @@ append, popLast: [improved in doubly](#2.2-linked-list-doubly)
 | --------- | ---------- |
 | append    | **O(1)**   |
 | prepend   | O(1)       |
+| getFirst  | O(1)       |
+| getLast   | **O(1)**   |
 | popFirst  | O(1)       |
 | popLast   | **O(1)**   |
