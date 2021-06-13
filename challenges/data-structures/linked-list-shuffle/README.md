@@ -1,4 +1,4 @@
-shuffle a doubly linked list
+shuffle a linked list
 
 prerequisite(s):
 - singly linked list
