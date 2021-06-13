@@ -15,11 +15,8 @@ func (ll *LinkedList) append(n Node) {
 	if ll.head == nil {
 		ll.head = &n
 	} else {
-		current := ll.head
-		for current.next != nil {
-			current = current.next
-		}
-		current.next = &n
+		last := ll.last()
+		last.next = &n
 	}
 }
 
