@@ -101,8 +101,8 @@ func (ll *LinkedList) remove(index int) *Node {
 	// edge cases
 	if index == 0 {
 		return ll.popFirst()
-	} else if current.next.next == nil {
-		return ll.popLast()
+	} else if index >= ll.size() {
+		return nil
 	// the node we want to remove is current.next
 	// because the loop is only until index-1
 	} else {
@@ -225,5 +225,8 @@ func main() {
 
 	list.clear()
 	fmt.Println("cleared list")
+	list.print()
+	fmt.Println("remove item at index", 1, "which is", list.remove(1))
+	fmt.Println("remove item at index", 2, "which is", list.remove(2))
 	list.print()
 }
