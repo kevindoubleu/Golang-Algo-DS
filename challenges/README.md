@@ -5,6 +5,7 @@
   - [1. Queue from Stacks](#1-queue-from-stacks)
   - [2. Linked List Shuffle](#2-linked-list-shuffle)
   - [3. Linked List Midpoint](#3-linked-list-midpoint)
+  - [4. Linked List Loops](#4-linked-list-loops)
 
 # Challenges
 
@@ -33,6 +34,15 @@ find the midpoint (middle node) in a __singly__ linked list, **but**
 
 also
 - if the length of list is even, there'd be 2 items in the middle, we'll return the first one (the one closer to the list's head)
+
+prerequisite(s):
+- singly linked list
+- doubly linked list
+
+
+## 4. Linked List Loops
+
+determine if a loop in a singly linked list exists or not
 
 prerequisite(s):
 - singly linked list
