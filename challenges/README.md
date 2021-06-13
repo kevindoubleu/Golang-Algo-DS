@@ -6,6 +6,7 @@
   - [2. Linked List Shuffle](#2-linked-list-shuffle)
   - [3. Linked List Midpoint](#3-linked-list-midpoint)
   - [4. Linked List Loops](#4-linked-list-loops)
+  - [5. Linked List `fromLast(n)`](#5-linked-list-fromlastn)
 
 # Challenges
 
@@ -43,6 +44,16 @@ prerequisite(s):
 ## 4. Linked List Loops
 
 determine if a loop in a singly linked list exists or not
+
+prerequisite(s):
+- singly linked list
+- doubly linked list
+
+## 5. Linked List `fromLast(n)`
+
+make a function that when called with an integer param, will return the node at that index, starting from the last node, **but**
+- no using the size method
+- must use singly linked list
 
 prerequisite(s):
 - singly linked list
