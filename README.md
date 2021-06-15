@@ -12,6 +12,7 @@ Data Structures
   - doubly
 - trees
   - regular
+  - binary search tree
 
 Challenges
 - queue from stacks
