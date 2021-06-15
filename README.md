@@ -8,7 +8,10 @@ Data Structures
 - queue
 - stack
 - linked list
-    - single
+  - single
+  - doubly
+- trees
+  - regular
 
 Challenges
 - queue from stacks
