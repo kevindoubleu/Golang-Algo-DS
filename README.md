@@ -11,9 +11,11 @@ Data Structures
     - single
 
 Challenges
-- DS
-    - queue from stacks
-    - linked list shuffle
+- queue from stacks
+- linked list shuffle
+- linked list midpoint
+- linked list loop detection
+- linked list `fromLast(n)`
 
 ## Contributing
 
