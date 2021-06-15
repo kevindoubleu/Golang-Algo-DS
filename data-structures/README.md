@@ -6,6 +6,7 @@
   - [2. Linked List](#2-linked-list)
     - [2.1 Linked List (Singly)](#21-linked-list-singly)
     - [2.2 Linked List (Doubly)](#22-linked-list-doubly)
+  - [3. Tree](#3-tree)
 
 # Time complexities
 
@@ -53,3 +54,15 @@ append, getLast, popLast: [improved in doubly](#2.2-linked-list-doubly)
 | getLast   | **O(1)**   |
 | popFirst  | O(1)       |
 | popLast   | **O(1)**   |
+
+## 3. Tree
+
+| operation               | complexity |
+| ----------------------- | ---------- |
+| addNode                 | O(1)       |
+| removeNode              | O(n)       |
+| traversal | O(n)       |
+
+add, remove: operated on a **node**, not a tree \
+remove: n means number of children of a **node**, not the entire tree \
+traversal: both breadth-first and depth-first
