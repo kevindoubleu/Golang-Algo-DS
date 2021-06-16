@@ -22,13 +22,16 @@ Data Structures
 
 Challenges
 - queue from stacks
-- linked list shuffle
-- linked list midpoint
-- linked list loop detection
-- linked list `fromLast(n)`
-- bst `contains(n)`
-- bst traversals
-- bst validation
+- linked lists
+  - shuffle
+  - midpoint
+  - loop detection
+  - `fromLast(n)`
+  - reverse
+- binary search trees
+  - `contains(n)`
+  - traversals
+  - validation
 
 ## Contributing
 
