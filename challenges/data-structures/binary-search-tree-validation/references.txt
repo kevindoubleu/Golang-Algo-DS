@@ -1,0 +1,2 @@
+integer max and min in golang
+https://www.programmersought.com/article/48197075692/
