@@ -9,6 +9,8 @@
   - [5. Linked List `fromLast(n)`](#5-linked-list-fromlastn)
   - [6. Tree Elements per Level](#6-tree-elements-per-level)
   - [7. BST Contains](#7-bst-contains)
+  - [8. BST Traversal](#8-bst-traversal)
+  - [9. BST Validation](#9-bst-validation)
 
 # Challenges
 
@@ -87,6 +89,39 @@ also:
 ## 7. BST Contains
 
 given a binary search tree, make a function that checks if a node with a certain data/value/key exists
+
+prerequisite(s):
+- binary search trees
+
+## 8. BST Traversal
+
+implement bst preorder, inorder, and postorder traversals, **and**
+- must be able to pass a function to be called at every node, not just print
+
+prerequisite(s):
+- binary search trees
+
+## 9. BST Validation
+
+given a node, validate wether it is a valid BST or not, for example
+```
+    10
+    /\
+   5  20
+    \
+    15
+```
+is not a valid bst, because even though 15 is correctly on the right branch of 5, it shouldn't be on the left branch of 10
+
+instead it should be on the right branch of 10 like this
+```
+    10
+    /\
+   5  20
+     /
+    15
+```
+now this is a valid bst
 
 prerequisite(s):
 - binary search trees

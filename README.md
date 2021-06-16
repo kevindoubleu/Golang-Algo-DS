@@ -20,6 +20,9 @@ Challenges
 - linked list midpoint
 - linked list loop detection
 - linked list `fromLast(n)`
+- bst `contains(n)`
+- bst traversals
+- bst validation
 
 ## Contributing
 
