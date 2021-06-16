@@ -81,4 +81,11 @@ func main() {
 	invalid2.get(11).left = &Node{data: 9}
 	invalid2.print()
 	fmt.Println(invalid2.isValid())
+
+	invalid3 := valid2
+	invalid3.insert(7)
+	invalid3.insert(5)
+	invalid3.get(5).left = &Node{data: 3}
+	invalid3.print()
+	fmt.Println(invalid3.isValid())
 }
