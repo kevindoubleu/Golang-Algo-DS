@@ -10,7 +10,8 @@ Table of time complexities for algorithms in this repo
 
 ## Sorting
 
-| algorithm | complexity |
-| --------- | ---------- |
-| bubble    | O(n^2)     |
-| selection | O(n^2)     |
+| algorithm | complexity   |
+| --------- | ------------ |
+| bubble    | O(n^2)       |
+| selection | O(n^2)       |
+| merge     | O(n\*log(n)) |

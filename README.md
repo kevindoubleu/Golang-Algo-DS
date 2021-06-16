@@ -8,6 +8,7 @@ Algorithms
 - sorting
   - bubble
   - selection
+  - merge
 
 Data Structures
 - queue
