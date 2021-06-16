@@ -6,24 +6,20 @@ func (t *BST) contains(data int) bool {
 	return t.root._contains(data)
 }
 func (n *Node) _contains(data int) bool {
+	if n != nil {
+		// we found it
+		if n.data == data {
+			return true
+		// bigger go right
+		} else if data > n.data {
+			return n.right._contains(data)
+		// smaller go left
+		} else if data < n.data {
+			return n.left._contains(data)
+		}
+	}
+
 	// not found
-	if n == nil {
-		return false
-	}
-
-	// we found it
-	if n.data == data {
-		return true
-	// bigger go right
-	} else if data > n.data {
-		return n.right._contains(data)
-	// smaller go left
-	} else if data < n.data {
-		return n.left._contains(data)
-	}
-
-	// golang forces us to return a value in this scope, so here
-	fmt.Println("this code will never be reached tho, just ignore it")
 	return false
 }
 
