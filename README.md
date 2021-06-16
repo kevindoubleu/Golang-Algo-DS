@@ -4,6 +4,10 @@ Here's my notebook of algo & DS in golang to help me land my first entry level s
 
 ## Contents
 
+Algorithms
+- sorting
+  - bubble
+
 Data Structures
 - queue
 - stack
