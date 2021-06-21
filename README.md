@@ -9,6 +9,8 @@ Algorithms
   - bubble
   - selection
   - merge
+- misc
+  - print 1-100 without loop
 
 Data Structures
 - queue
@@ -21,17 +23,20 @@ Data Structures
   - binary search tree
 
 Challenges
-- queue from stacks
-- linked lists
-  - shuffle
-  - midpoint
-  - loop detection
-  - `fromLast(n)`
-  - reverse
-- binary search trees
-  - `contains(n)`
-  - traversals
-  - validation
+- algorithms
+  - print 1-100 without using loop
+- data structures
+  - queue from stacks
+  - linked lists
+    - shuffle
+    - midpoint
+    - loop detection
+    - `fromLast(n)`
+    - reverse
+  - binary search trees
+    - `contains(n)`
+    - traversals
+    - validation
 
 ## Contributing
 

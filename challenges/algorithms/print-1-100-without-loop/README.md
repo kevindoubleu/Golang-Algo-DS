@@ -1,0 +1,1 @@
+print numbers 1 until 100 without using any loop
