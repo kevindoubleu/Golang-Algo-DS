@@ -2,22 +2,37 @@
 
 - [Table of Contents](#table-of-contents)
 - [Challenges](#challenges)
-  - [1. Queue from Stacks](#1-queue-from-stacks)
-  - [2. Linked Lists](#2-linked-lists)
-    - [2.1 Linked List Shuffle](#21-linked-list-shuffle)
-    - [2.2 Linked List Midpoint](#22-linked-list-midpoint)
-    - [2.3 Linked List Loops](#23-linked-list-loops)
-    - [2.4 Linked List `fromLast(n)`](#24-linked-list-fromlastn)
-    - [2.5 Linked List Reverse](#25-linked-list-reverse)
-  - [3. Tree Elements per Level](#3-tree-elements-per-level)
-  - [4. Binary Search Trees](#4-binary-search-trees)
-    - [4.1 BST Contains](#41-bst-contains)
-    - [4.2 BST Traversal](#42-bst-traversal)
-    - [4.3 BST Validation](#43-bst-validation)
+  - [Algorithms](#algorithms)
+    - [1. Anagrams](#1-anagrams)
+  - [Data structures](#data-structures)
+    - [1. Queue from Stacks](#1-queue-from-stacks)
+    - [2. Linked Lists](#2-linked-lists)
+      - [2.1 Linked List Shuffle](#21-linked-list-shuffle)
+      - [2.2 Linked List Midpoint](#22-linked-list-midpoint)
+      - [2.3 Linked List Loops](#23-linked-list-loops)
+      - [2.4 Linked List `fromLast(n)`](#24-linked-list-fromlastn)
+      - [2.5 Linked List Reverse](#25-linked-list-reverse)
+    - [3. Tree Elements per Level](#3-tree-elements-per-level)
+    - [4. Binary Search Trees](#4-binary-search-trees)
+      - [4.1 BST Contains](#41-bst-contains)
+      - [4.2 BST Traversal](#42-bst-traversal)
+      - [4.3 BST Validation](#43-bst-validation)
 
 # Challenges
 
-## 1. Queue from Stacks
+## Algorithms
+
+### 1. Anagrams
+
+given 2 strings, determine if they're anagrams
+
+special characters such as space, comma, period, are included, so
+- `anagram("hello.", "hell.o")` is true
+- `anagram("hello.", "hello"` is false
+
+## Data structures
+
+### 1. Queue from Stacks
 
 simulate a queue's behavior, using stacks
 
@@ -25,9 +40,9 @@ prerequisite(s):
 - queue
 - stack
 
-## 2. Linked Lists
+### 2. Linked Lists
 
-### 2.1 Linked List Shuffle
+#### 2.1 Linked List Shuffle
 
 shuffle a doubly linked list
 
@@ -35,7 +50,7 @@ prerequisite(s):
 - singly linked list
 - doubly linked list
 
-### 2.2 Linked List Midpoint
+#### 2.2 Linked List Midpoint
 
 find the midpoint (middle node) in a __singly__ linked list, **but**
 - no using a counter variable
@@ -50,7 +65,7 @@ prerequisite(s):
 - doubly linked list
 
 
-### 2.3 Linked List Loops
+#### 2.3 Linked List Loops
 
 determine if a loop in a singly linked list exists or not
 
@@ -58,7 +73,7 @@ prerequisite(s):
 - singly linked list
 - doubly linked list
 
-### 2.4 Linked List `fromLast(n)`
+#### 2.4 Linked List `fromLast(n)`
 
 make a function that when called with an integer param, will return the node at that index, starting from the last node, **but**
 - no using the size method
@@ -68,14 +83,14 @@ prerequisite(s):
 - singly linked list
 - doubly linked list
 
-### 2.5 Linked List Reverse
+#### 2.5 Linked List Reverse
 
 reverse a singly linked list
 
 prerequisite(s):
 - singly linked list
 
-## 3. Tree Elements per Level
+### 3. Tree Elements per Level
 
 make a function that takes a node, and returns an array/slice of element counts per level, starting from that node. like:
 
@@ -98,16 +113,16 @@ but:
 also:
 - the node values don't matter
 
-## 4. Binary Search Trees
+### 4. Binary Search Trees
 
-### 4.1 BST Contains
+#### 4.1 BST Contains
 
 given a binary search tree, make a function that checks if a node with a certain data/value/key exists
 
 prerequisite(s):
 - binary search trees
 
-### 4.2 BST Traversal
+#### 4.2 BST Traversal
 
 implement bst preorder, inorder, and postorder traversals, **and**
 - must be able to pass a function to be called at every node, not just print
@@ -115,7 +130,7 @@ implement bst preorder, inorder, and postorder traversals, **and**
 prerequisite(s):
 - binary search trees
 
-### 4.3 BST Validation
+#### 4.3 BST Validation
 
 given a node, validate wether it is a valid BST or not, for example
 ```
