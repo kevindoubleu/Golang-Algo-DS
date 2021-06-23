@@ -9,8 +9,6 @@ Algorithms
   - bubble
   - selection
   - merge
-- misc
-  - print 1-100 without loop
 
 Data Structures
 - queue
@@ -25,6 +23,8 @@ Data Structures
 Challenges
 - algorithms
   - print 1-100 without using loop
+  - anagrams
+  - palindrome
 - data structures
   - queue from stacks
   - linked lists

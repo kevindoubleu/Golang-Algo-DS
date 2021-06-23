@@ -3,7 +3,8 @@
 - [Table of Contents](#table-of-contents)
 - [Challenges](#challenges)
   - [Algorithms](#algorithms)
-    - [1. Anagrams](#1-anagrams)
+    - [1. Palindromes](#1-palindromes)
+    - [2. Anagrams](#2-anagrams)
   - [Data structures](#data-structures)
     - [1. Queue from Stacks](#1-queue-from-stacks)
     - [2. Linked Lists](#2-linked-lists)
@@ -22,7 +23,17 @@
 
 ## Algorithms
 
-### 1. Anagrams
+### 1. Palindromes
+
+given a string, determine if it's a palindrome
+
+e.g.
+- `palindrome("madam")` is true
+- `palindrome("madame")` is false
+- `palindrome("car")` is false
+- `palindrome("racecar")` is true
+
+### 2. Anagrams
 
 given 2 strings, determine if they're anagrams
 
