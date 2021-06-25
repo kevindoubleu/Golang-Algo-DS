@@ -8,6 +8,7 @@
     - [3. Swap integers without extra variable](#3-swap-integers-without-extra-variable)
     - [4. Big number subtraction](#4-big-number-subtraction)
     - [5. Reverse every word in sentence](#5-reverse-every-word-in-sentence)
+    - [6. Regex simple match and extract](#6-regex-simple-match-and-extract)
   - [Data structures](#data-structures)
     - [1. Queue from Stacks](#1-queue-from-stacks)
     - [2. Linked Lists](#2-linked-lists)
@@ -78,6 +79,15 @@ e.g.
 input = "Hello World!"
 output = "olleH dlroW!"
 ```
+
+### 6. Regex simple match and extract
+
+Given a string `"http://tokopedia.com/discovery/get-this-string/new"` \
+Extract "get-this-string" with a regex.
+
+For example: \
+Input = `"http://tokopedia.com/discovery/hohoho/new"` \
+Expected Output = "hohoho"
 
 ## Data structures
 
