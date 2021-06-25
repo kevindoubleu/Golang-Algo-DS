@@ -9,6 +9,7 @@
     - [4. Big number subtraction](#4-big-number-subtraction)
     - [5. Reverse every word in sentence](#5-reverse-every-word-in-sentence)
     - [6. Regex simple match and extract](#6-regex-simple-match-and-extract)
+    - [7. Max profit](#7-max-profit)
   - [Data structures](#data-structures)
     - [1. Queue from Stacks](#1-queue-from-stacks)
     - [2. Linked Lists](#2-linked-lists)
@@ -88,6 +89,19 @@ Extract "get-this-string" with a regex.
 For example: \
 Input = `"http://tokopedia.com/discovery/hohoho/new"` \
 Expected Output = "hohoho"
+
+### 7. Max profit
+
+Given an integer array, find the maximum difference between two elements in it such that the smaller element appears before the larger element.
+
+e.g.
+
+- input `{ 2, 7, 9, 5, 1, 3, 5 }` will output `7`, because the pair is `{2,9}`, not `{9,1}`
+  - because "the smaller element appears before the larger element"
+
+also
+
+- we don't care what the pair is, we just want the difference
 
 ## Data structures
 

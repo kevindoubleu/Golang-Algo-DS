@@ -27,6 +27,8 @@ Challenges
   - palindrome
   - swap number without extra var
   - big number subtraction
+  - regex simple match and extract
+  - max profit
 - data structures
   - queue from stacks
   - linked lists
