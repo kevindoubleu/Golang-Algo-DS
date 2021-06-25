@@ -43,6 +43,33 @@ func (n *Node) _print(space string) {
 	n.left._print(space)
 }
 
+func (n *Node) preorder() {
+	if n == nil {
+		return
+	}
+	fmt.Print(n.data, " ")
+	n.left.preorder()
+	n.right.preorder()
+}
+
+func (n *Node) inorder() {
+	if n == nil {
+		return
+	}
+	n.left.inorder()
+	fmt.Print(n.data, " ")
+	n.right.inorder()
+}
+
+func (n *Node) postorder() {
+	if n == nil {
+		return
+	}
+	n.left.postorder()
+	n.right.postorder()
+	fmt.Print(n.data, " ")
+}
+
 // wrapper class for handling BST initialization
 type BST struct {
 	root *Node

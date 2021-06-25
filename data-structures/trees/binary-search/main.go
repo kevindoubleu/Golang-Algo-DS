@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	// with BST wrapper struct
 	var bst1 BST
@@ -23,4 +25,12 @@ func main() {
 	bst2.insert(20)
 	bst2.insert(-20)
 	bst2.print()
+
+	// testing traversals
+	bst2.preorder()
+	fmt.Println("")
+	bst2.inorder()
+	fmt.Println("")
+	bst2.postorder()
+	fmt.Println("")
 }
