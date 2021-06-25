@@ -9,7 +9,7 @@
     - [4. Big number subtraction](#4-big-number-subtraction)
     - [5. Reverse every word in sentence](#5-reverse-every-word-in-sentence)
     - [6. Regex simple match and extract](#6-regex-simple-match-and-extract)
-    - [7. Max profit](#7-max-profit)
+    - [7. Max difference of 2 elements in array](#7-max-difference-of-2-elements-in-array)
   - [Data structures](#data-structures)
     - [1. Queue from Stacks](#1-queue-from-stacks)
     - [2. Linked Lists](#2-linked-lists)
@@ -90,7 +90,7 @@ For example: \
 Input = `"http://tokopedia.com/discovery/hohoho/new"` \
 Expected Output = "hohoho"
 
-### 7. Max profit
+### 7. Max difference of 2 elements in array
 
 Given an integer array, find the maximum difference between two elements in it such that the smaller element appears before the larger element.
 

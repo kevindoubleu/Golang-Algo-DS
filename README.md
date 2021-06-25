@@ -28,7 +28,7 @@ Challenges
   - swap number without extra var
   - big number subtraction
   - regex simple match and extract
-  - max profit
+  - max difference of 2 elements in array
 - data structures
   - queue from stacks
   - linked lists
