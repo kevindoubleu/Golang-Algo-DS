@@ -5,6 +5,7 @@
   - [Algorithms](#algorithms)
     - [1. Palindromes](#1-palindromes)
     - [2. Anagrams](#2-anagrams)
+    - [3. Swap integers without extra variable](#3-swap-integers-without-extra-variable)
   - [Data structures](#data-structures)
     - [1. Queue from Stacks](#1-queue-from-stacks)
     - [2. Linked Lists](#2-linked-lists)
@@ -40,6 +41,10 @@ given 2 strings, determine if they're anagrams
 special characters such as space, comma, period, are included, so
 - `anagram("hello.", "hell.o")` is true
 - `anagram("hello.", "hello"` is false
+
+### 3. Swap integers without extra variable
+
+Given 2 integers, swap the value of those two variables without using extra variable(s).
 
 ## Data structures
 
