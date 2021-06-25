@@ -6,6 +6,8 @@
     - [1. Palindromes](#1-palindromes)
     - [2. Anagrams](#2-anagrams)
     - [3. Swap integers without extra variable](#3-swap-integers-without-extra-variable)
+    - [4. Big number subtraction](#4-big-number-subtraction)
+    - [5. Reverse every word in sentence](#5-reverse-every-word-in-sentence)
   - [Data structures](#data-structures)
     - [1. Queue from Stacks](#1-queue-from-stacks)
     - [2. Linked Lists](#2-linked-lists)
@@ -45,6 +47,37 @@ special characters such as space, comma, period, are included, so
 ### 3. Swap integers without extra variable
 
 Given 2 integers, swap the value of those two variables without using extra variable(s).
+
+### 4. Big number subtraction
+
+given 2 numbers as a string, with values bigger than any integer type
+
+make a function that can subtract these 2 big numbers and return the result as string
+
+e.g.
+- `bigNumSubtract("11443333311111111100", "1144422222221111")` returns `"11442188888888889989"`
+
+bonus points if other operations are supported, such as addition
+
+### 5. Reverse every word in sentence
+
+create a function to reverse each word in a sentence
+
+but
+
+- the order of the words is unaffected
+- punctuations are unaffected
+
+also
+
+- sentences will only contain `[a-zA-Z0-9]` and optional punctuation at the end
+
+e.g.
+
+```
+input = "Hello World!"
+output = "olleH dlroW!"
+```
 
 ## Data structures
 
