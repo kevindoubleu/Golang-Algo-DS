@@ -25,6 +25,8 @@ Challenges
   - print 1-100 without using loop
   - anagrams
   - palindrome
+  - swap number without extra var
+  - big number subtraction
 - data structures
   - queue from stacks
   - linked lists
