@@ -21,16 +21,16 @@ func (t *Tree) traverseBF(f func(n *Node)) {
 		// we're going to process the head
 		head := queue.Front()
 
-		// enqueue all the head's children
-		for _, child := range head.Value.(*Node).children {
-			queue.PushBack(child)
-		}
-
 		// process the head
 		f(head.Value.(*Node))
 
 		// we're done, remove the head
 		queue.Remove(head)
+
+		// enqueue all the head's children
+		for _, child := range head.Value.(*Node).children {
+			queue.PushBack(child)
+		}
 	}
 }
 
@@ -49,6 +49,12 @@ func (t *Tree) traverseDF(f func(n *Node)) {
 		// we're going to process the top of stack
 		top := stack.Front()
 
+		// process the top
+		f(top.Value.(*Node))
+
+		// we're done, remove the top
+		stack.Remove(top)
+
 		// push all the top's children to top of stack
 		// first we convert the children into a list
 		// then we combine that list
@@ -58,12 +64,6 @@ func (t *Tree) traverseDF(f func(n *Node)) {
 			childrenList.PushBack(child)
 		}
 		stack.PushFrontList(childrenList)
-
-		// process the top
-		f(top.Value.(*Node))
-
-		// we're done, remove the top
-		stack.Remove(top)
 	}
 }
 
