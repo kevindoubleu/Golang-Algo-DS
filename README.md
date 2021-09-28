@@ -19,6 +19,7 @@ Data Structures
 - trees
   - regular
   - binary search tree
+  - prefix tree (trie)
 
 Challenges
 - algorithms

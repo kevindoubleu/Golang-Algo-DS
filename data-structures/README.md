@@ -8,6 +8,7 @@
     - [2.2 Linked List (Doubly)](#22-linked-list-doubly)
   - [3. Tree](#3-tree)
     - [3.1 Binary Search Tree](#31-binary-search-tree)
+    - [3.2 Prefix Tree (Trie)](#32-prefix-tree-trie)
 
 # Time complexities
 
@@ -73,3 +74,12 @@ traversal: both breadth-first and depth-first
 | operation | complexity |
 | --------- | ---------- |
 | insert    | O(1)       |
+
+### 3.2 Prefix Tree (Trie)
+
+| operation | complexity |
+| --------- | ---------- |
+| insert    | O(n)       |
+| search    | O(n)       |
+
+insert, search: n means string length
