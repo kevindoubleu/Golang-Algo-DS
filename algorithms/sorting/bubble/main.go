@@ -15,5 +15,6 @@ func bubbleSort(arr []int) []int {
 
 func main() {
 	arr1 := []int{5,4,3,2,7,8,5,3}
-	fmt.Println(bubbleSort(arr1))
+	bubbleSort(arr1)
+	fmt.Println(arr1)
 }

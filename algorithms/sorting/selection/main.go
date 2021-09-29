@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func selectionSort(arr []int) []int {
+func selectionSort(arr []int) {
 	var idxOfMin int
 	// for every item in the array
 	for i := range arr {
@@ -18,10 +18,10 @@ func selectionSort(arr []int) []int {
 			arr[idxOfMin], arr[i] = arr[i], arr[idxOfMin]
 		}
 	}
-	return arr
 }
 
 func main() {
 	arr1 := []int{5,4,3,2,7,8,5,3}
-	fmt.Println(selectionSort(arr1))
+	selectionSort(arr1)
+	fmt.Println(arr1)
 }

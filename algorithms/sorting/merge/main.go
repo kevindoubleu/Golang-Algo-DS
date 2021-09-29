@@ -2,16 +2,20 @@ package main
 
 import "fmt"
 
-// merge sort is a divide and conquer algo
+// wrapper function
+func mergeSort(arr []int) {
+	copy(arr, _mergeSort(arr))
+}
 
-// this is the divide part
-func mergeSort(arr []int) []int {
+// merge sort is a divide and conquer algo
+// this is the divide and conquer part
+func _mergeSort(arr []int) []int {
 	fmt.Println("mergesort called with", arr)
 	arrLen := len(arr)
 	if arrLen > 2 {
-		// the actual divide part or divide and conuer
+		// the actual divide part of divide and conuer
 		// we "clone" ourselves and work on halves of the original arr
-		arr = _merge(mergeSort(arr[:arrLen/2]), mergeSort(arr[arrLen/2:]))
+		arr = _merge(_mergeSort(arr[:arrLen/2]), _mergeSort(arr[arrLen/2:]))
 	} else if arrLen == 2 {
 		// we keep "cloning" until we only have 2 items
 		// then we sort them simply
@@ -26,8 +30,7 @@ func mergeSort(arr []int) []int {
 	return arr
 }
 
-// this is the combining (after dividing) part in divide and conquer that
-// rarely gets any attention bcs its not always needed
+// this is the combining part (after divide and conquer part)
 func _merge(left, right []int) []int {
 	// here we know that the arrays left and right are both sorted
 	var result []int
@@ -55,5 +58,6 @@ func _merge(left, right []int) []int {
 
 func main() {
 	arr1 := []int{5,4,3,2,7,8,5,3,-10}
-	fmt.Println(mergeSort(arr1))
+	mergeSort(arr1)
+	fmt.Println(arr1)
 }
