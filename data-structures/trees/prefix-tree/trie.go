@@ -10,7 +10,7 @@ type Trie struct {
 }
 
 func newTrie() *Trie {
-	return &Trie{root: newNode("")}
+	return &Trie{root: newNode()}
 }
 
 // breadth first
@@ -44,9 +44,22 @@ func (t *Trie) insert(str string) {
 		}
 		current = current.children[char]
 	}
+	current.isEnd = true
 }
 
 func (t *Trie) search(str string) bool {
+	current := t.root
+	for _, c := range str {
+		char := string(c)
+		if current.children[char] == nil {
+			return false
+		}
+		current = current.children[char]
+	}
+	return current.isEnd
+}
+
+func (t *Trie) startsWith(str string) bool {
 	current := t.root
 	for _, c := range str {
 		char := string(c)

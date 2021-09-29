@@ -77,9 +77,10 @@ traversal: both breadth-first and depth-first
 
 ### 3.2 Prefix Tree (Trie)
 
-| operation | complexity |
-| --------- | ---------- |
-| insert    | O(n)       |
-| search    | O(n)       |
+| operation  | complexity |
+| ---------- | ---------- |
+| insert     | O(n)       |
+| search     | O(n)       |
+| startsWith | O(n)       |
 
-insert, search: n means string length
+insert, search, startsWith: n means string length

@@ -2,16 +2,16 @@ package main
 
 type Node struct {
 	children map[string]*Node
-	value string
+	isEnd bool
 }
 
-func newNode(value string) *Node {
-	n := Node{value: value}
+func newNode() *Node {
+	n := Node{}
 	n.children = make(map[string]*Node)
 	return &n
 }
 
 func (n *Node) addChild(value string) {
-	child := newNode(value)
-	n.children[child.value] = child
+	child := newNode()
+	n.children[value] = child
 }
