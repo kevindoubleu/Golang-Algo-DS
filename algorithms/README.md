@@ -14,4 +14,5 @@ Table of time complexities for algorithms in this repo
 | --------- | ------------ |
 | bubble    | O(n^2)       |
 | selection | O(n^2)       |
+| insertion | O(n^2)       |
 | merge     | O(n\*log(n)) |
