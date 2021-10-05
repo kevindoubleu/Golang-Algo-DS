@@ -21,6 +21,8 @@ Data Structures
   - regular
   - binary search tree
   - prefix tree (trie)
+- heaps
+  - min heap
 
 Challenges
 - algorithms
