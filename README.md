@@ -23,6 +23,7 @@ Data Structures
   - prefix tree (trie)
 - heaps
   - min heap
+  - max heap
 
 Challenges
 - algorithms
