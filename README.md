@@ -10,6 +10,9 @@ Algorithms
   - selection
   - insertion
   - merge
+- sorting
+  - linear
+  - binary
 
 Data Structures
 - queue
