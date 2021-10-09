@@ -9,7 +9,8 @@
   - [3. Tree](#3-tree)
     - [3.1 Binary Search Tree](#31-binary-search-tree)
     - [3.2 Prefix Tree (Trie)](#32-prefix-tree-trie)
-  - [4. Heaps](#4-heaps)
+  - [4. Heap](#4-heap)
+  - [4.1 Priority Queue (Heap-based)](#41-priority-queue-heap-based)
 
 # Time complexities
 
@@ -86,9 +87,17 @@ traversal: both breadth-first and depth-first
 
 insert, search, startsWith: n means string length
 
-## 4. Heaps
+## 4. Heap
 
 | operation       | complexity |
 | --------------- | ---------- |
 | insert          | O(log n)   |
 | getMax / getMin | O(log n)   |
+
+## 4.1 Priority Queue (Heap-based)
+
+| operation  | complexity |
+| ---------- | ---------- |
+| push       | O(log n)   |
+| pop        | O(log n)   |
+| peek       | O(1)       |

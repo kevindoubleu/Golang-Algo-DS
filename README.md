@@ -27,6 +27,7 @@ Data Structures
 - heaps
   - min heap
   - max heap
+  - priority queue
 
 Challenges
 - algorithms
