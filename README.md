@@ -28,6 +28,11 @@ Data Structures
   - min heap
   - max heap
   - priority queue
+- graphs
+  - basic (undirected & unweighted)
+  - directed
+  - weighted
+  - weighted & directed
 
 Challenges
 - algorithms

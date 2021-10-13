@@ -11,6 +11,7 @@
     - [3.2 Prefix Tree (Trie)](#32-prefix-tree-trie)
   - [4. Heap](#4-heap)
   - [4.1 Priority Queue (Heap-based)](#41-priority-queue-heap-based)
+  - [5. Graph](#5-graph)
 
 # Time complexities
 
@@ -101,3 +102,10 @@ insert, search, startsWith: n means string length
 | push       | O(log n)   |
 | pop        | O(log n)   |
 | peek       | O(1)       |
+
+## 5. Graph
+
+| operation  | complexity |
+| ---------- | ---------- |
+| addVertex  | O(1)       |
+| addEdge    | O(1)       |
