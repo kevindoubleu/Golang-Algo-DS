@@ -10,7 +10,7 @@ Algorithms
   - selection
   - insertion
   - merge
-- sorting
+- searching
   - linear
   - binary
 

@@ -109,3 +109,7 @@ insert, search, startsWith: n means string length
 | ---------- | ---------- |
 | addVertex  | O(1)       |
 | addEdge    | O(1)       |
+| DFS        | O(n)       |
+| BFS        | O(n)       |
+
+dfs, bfs: n means number of vertices
