@@ -19,8 +19,11 @@ func (g Graph) BFS(rootVertex int) {
 	queue.PushBack(rootVertex)
 	for queue.Len() > 0 {
 		currVertex := queue.Remove(queue.Front())
+		if visited[currVertex.(int)] {
+			continue
+		}
 
-		fmt.Println("processing vertex", currVertex)
+		fmt.Println("processing vertex", currVertex, g.adjList[currVertex.(int)])
 		visited[currVertex.(int)] = true
 		// fmt.Println("visited", visited)
 
@@ -46,6 +49,9 @@ func (g Graph) DFS(rootVertex int) {
 	for len(stack) > 0 {
 		currVertex := stack[len(stack)-1]
 		stack = stack[:len(stack)-1]
+		if visited[currVertex] {
+			continue
+		}
 
 		fmt.Println("processing vertex", currVertex)
 		visited[currVertex] = true
@@ -69,10 +75,12 @@ func (g Graph) DFSpreorder(rootVertex int) {
 	stack := []int{rootVertex}
 	visited := make(map[int]bool)
 
-	visited[rootVertex] = true
 	for len(stack) > 0 {
 		currVertex := stack[len(stack)-1]
 		stack = stack[:len(stack)-1]
+		if visited[currVertex] {
+			continue
+		}
 		
 		fmt.Println("processing vertex", currVertex)
 		visited[currVertex] = true
@@ -95,43 +103,30 @@ func (g Graph) DFSpreorder(rootVertex int) {
 }
 
 func main() {
-	// below is replicated graph from this wiki page
-	// https://en.wikipedia.org/wiki/Breadth-first_search
-	bfsGraph := newGraph()
-	bfsGraph.addVertexInRange(1, 12)
-	bfsGraph.addEdge(1,2)
-	bfsGraph.addEdge(1,3)
-	bfsGraph.addEdge(1,4)
-	bfsGraph.addEdge(2,5)
-	bfsGraph.addEdge(2,6)
-	bfsGraph.addEdge(5,9)
-	bfsGraph.addEdge(5,10)
-	bfsGraph.addEdge(4,7)
-	bfsGraph.addEdge(4,8)
-	bfsGraph.addEdge(7,11)
-	bfsGraph.addEdge(7,12)
+	// below is replicated graph from
+	// https://medium.com/@crusso_22624/bfs-vs-dfs-graph-traversals-comparing-times-80729f100bf
+	g1 := newGraph()
+	g1.addVertex(10)
+	g1.addVertex(20)
+	g1.addVertex(30)
+	g1.addVertex(40)
+	g1.addVertex(50)
+	g1.addVertex(60)
+	g1.addVertex(70)
+	g1.addEdge(40, 20)
+	g1.addEdge(40, 10)
+	g1.addEdge(10, 30)
+	g1.addEdge(20, 10)
+	g1.addEdge(20, 30)
+	g1.addEdge(20, 60)
+	g1.addEdge(20, 50)
+	g1.addEdge(30, 60)
+	g1.addEdge(50, 70)
+	g1.addEdge(60, 70)
 
-	bfsGraph.BFS(1)
-
-
-	// below is replicated graph from this wiki page
-	// https://en.wikipedia.org/wiki/Depth-first_search
-	dfsGraph := newGraph()
-	dfsGraph.addVertexInRange(1, 12)
-	dfsGraph.addEdge(1,2)
-	dfsGraph.addEdge(1,7)
-	dfsGraph.addEdge(1,8)
-	dfsGraph.addEdge(2,3)
-	dfsGraph.addEdge(2,6)
-	dfsGraph.addEdge(3,4)
-	dfsGraph.addEdge(3,5)
-	dfsGraph.addEdge(8,9)
-	dfsGraph.addEdge(8,12)
-	dfsGraph.addEdge(9,10)
-	dfsGraph.addEdge(9,11)
-
-	dfsGraph.DFS(1)
-	dfsGraph.DFSpreorder(1)
+	// g1.BFS(40)
+	// g1.DFS(40)
+	g1.DFSpreorder(40)
 
 	// the ordering is still unpredictable despite attempts to order them
 	// this is due to using maps as the graph implementation
