@@ -13,6 +13,9 @@ Algorithms
 - searching
   - linear
   - binary
+- dynamic programming
+  - memoization
+  - tabulation
 
 Data Structures
 - queue

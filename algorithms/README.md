@@ -4,6 +4,7 @@
 - [Time complexities](#time-complexities)
   - [Sorting](#sorting)
   - [Searching](#searching)
+  - [Dynamic programming](#dynamic-programming)
 
 # Time complexities
 
@@ -24,3 +25,10 @@ Table of time complexities for algorithms in this repo
 | --------- | ---------- |
 | linear    | O(n^2)     |
 | binary    | O(log n)   |
+
+## Dynamic programming
+
+| technique   | complexity |
+| ----------- | ---------- |
+| memoization | O(n)       |
+| tabulation  | O(n)       |
