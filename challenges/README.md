@@ -11,6 +11,7 @@
     - [6. Regex simple match and extract](#6-regex-simple-match-and-extract)
     - [7. Max difference of 2 elements in array](#7-max-difference-of-2-elements-in-array)
     - [8. Power with recursion](#8-power-with-recursion)
+    - [9. Palindrome number](#9-palindrome-number)
   - [Data structures](#data-structures)
     - [1. Queue from Stacks](#1-queue-from-stacks)
     - [2. Linked Lists](#2-linked-lists)
@@ -107,6 +108,14 @@ also
 ### 8. Power with recursion
 
 implement power function like `math.Pow` using recursion
+
+### 9. Palindrome number
+
+check if a number is palindrome
+
+but
+
+- you may not cast it to a string
 
 ## Data structures
 

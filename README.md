@@ -47,6 +47,7 @@ Challenges
   - regex simple match and extract
   - max difference of 2 elements in array
   - power with recursion
+  - palindrome number
 - data structures
   - queue from stacks
   - linked lists
