@@ -10,6 +10,7 @@
     - [5. Reverse every word in sentence](#5-reverse-every-word-in-sentence)
     - [6. Regex simple match and extract](#6-regex-simple-match-and-extract)
     - [7. Max difference of 2 elements in array](#7-max-difference-of-2-elements-in-array)
+    - [8. Power with recursion](#8-power-with-recursion)
   - [Data structures](#data-structures)
     - [1. Queue from Stacks](#1-queue-from-stacks)
     - [2. Linked Lists](#2-linked-lists)
@@ -102,6 +103,10 @@ e.g.
 also
 
 - we don't care what the pair is, we just want the difference
+
+### 8. Power with recursion
+
+implement power function like `math.Pow` using recursion
 
 ## Data structures
 
