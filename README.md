@@ -48,6 +48,7 @@ Challenges
   - max difference of 2 elements in array
   - power with recursion
   - palindrome number
+  - string compression
 - data structures
   - queue from stacks
   - linked lists

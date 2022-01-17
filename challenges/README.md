@@ -12,6 +12,7 @@
     - [7. Max difference of 2 elements in array](#7-max-difference-of-2-elements-in-array)
     - [8. Power with recursion](#8-power-with-recursion)
     - [9. Palindrome number](#9-palindrome-number)
+    - [10. String compression](#10-string-compression)
   - [Data structures](#data-structures)
     - [1. Queue from Stacks](#1-queue-from-stacks)
     - [2. Linked Lists](#2-linked-lists)
@@ -116,6 +117,17 @@ check if a number is palindrome
 but
 
 - you may not cast it to a string
+
+### 10. String compression
+
+create a function that compresses duplicate consecutive chars in a string
+into a number indicating the count of that consecutive char
+
+e.g.
+```
+abbcccddddqwe -> ab2c3d4qwe
+aaaaaaaaaab -> a10b
+```
 
 ## Data structures
 
